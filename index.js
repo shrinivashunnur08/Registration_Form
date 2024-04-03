@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-mongoose.connect('mongodb+srv://signup_form:signup_form@cluster0.waorzra.mongodb.net/Registration_Form');
+mongoose.connect('Place your Mongo Atlas URL');
 var db = mongoose.connection;
 db.on('error', () => console.log("Error in Connecting to Database"));
 db.once('open', () => console.log("Connected to Database Successfully !"));
